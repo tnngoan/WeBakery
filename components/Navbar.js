@@ -10,7 +10,7 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center border-b">
+    <nav className="flex justify-between items-center border-b flex-shrink">
       <Link href="/">
         <Image
           priority={true}
@@ -18,26 +18,25 @@ function Navbar() {
           height={105}
           alt="Home"
           src={logo}
-          className="cursor-pointer"
+          className="cursor-pointer flex-shrink-0"
         />
       </Link>
-      <div className="text-grey flex items-center bg-gray-100 rounded-md focus:border-yellow-500 ">
-        <SearchIcon
-          className="text-gray-700"
-          style={{ padding: 5, fontSize: 40 }}
-        />
+      <div className="text-grey flex items-center bg-gray-100 rounded-md focus:border-yellow-500 flex-shrink">
         <input
           type="search"
+          className="block w-full py-1.5 pl-10 pr-4 leading-normal rounded-2xl focus:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-500 ring-opacity-90 bg-gray-100 dark:bg-gray-800 text-gray-400 aa-input"
           placeholder="Search"
-          className="text-gray-700 lex-1 h-12 w-80 px-8 outline-none bg-gray-100 rounded"
-        >
-          
-           </input>
+        />
+        {/* <input
+          type="search"
+          placeholder="Search"
+          className="block w-full text-gray-700 lex-1 h-12 px-8 outline-none bg-gray-100 rounded"
+        ></input> */}
       </div>
       <group className="cursor-pointer flex justify-around px-5 font-bold text-black">
         <div className="group flex flex-col items-center">
           <IconButton>
-            <Link href="/menu">
+            <Link href="/products">
               <AppsIcon
                 className="text-black hover:text-yellow-500"
                 style={{ padding: 5, fontSize: 50 }}
