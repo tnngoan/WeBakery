@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Products = () => {
   const [posts, setPosts] = useState([]);
@@ -24,7 +25,12 @@ const Products = () => {
                 key={cake.id}
                 className="m-2 p-1 flex flex-col items-center justify-evenly"
               >
-                <img width='283' height='283' src={cake.image} alt={`Preview of ${cake.name}`} />
+                <Image
+                  src={cake.image}
+                  alt={`Preview of ${cake.name}`}
+                  width={283}
+                  height={283}
+                />
                 <h3 className="capitalize">{cake.name}</h3>
                 <p>{cake.description}</p>
                 <p>${cake.price}</p>
