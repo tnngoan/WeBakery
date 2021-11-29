@@ -1,43 +1,39 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
+import products from "../products.json";
 
 const Products = () => {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    async function getPosts() {
-      const url =
-        `https://api.buttercms.com/v2/content/cart/?auth_token=` +
-        `b1458652919b213fc81af246f3bacf1e7672ee49`;
-      console.log(process.env.auth_token);
-      const res = await fetch(url);
-      const { data } = await res.json();
-      const allProducts = data.cart;
-      setPosts([...allProducts]);
-    }
-    getPosts();
-  }, []);
   return (
-    <div className="flex flex-wrap items-center justify-evenly md:grid-cols-4 xl:grid-flow-row flex-grow">
-      {posts.length > 0
-        ? posts.map((cake) => {
-            return (
-              <div
-                key={cake.id}
-                className="m-2 p-1 flex flex-col items-center justify-evenly"
-              >
-                <Image
-                  src={cake.image}
-                  alt={`Preview of ${cake.name}`}
-                  width={283}
-                  height={283}
-                />
-                <h3 className="capitalize">{cake.name}</h3>
-                <p>{cake.description}</p>
-                <p>${cake.price}</p>
-              </div>
-            );
-          })
-        : "Loading..."}
+    <div className="">
+      <div className="flex justify-center">
+        <button className="px-4 mt-4 mx-4 w-32 bg-yellow-800 text-white">Food</button>
+        <button className="px-4 mt-4 mx-4 w-32 bg-yellow-800 text-white">Beverages</button>
+      </div>
+      <div className="pt-4 flex items-center justify-evenly grid grid-cols-3 grid-flow-row gap-4 md:grid-cols-4 xl:grid-cols-5 rounded-sm">
+        {products.length > 0
+          ? products.map((item) => {
+              return (
+                <div
+                  key={item.id}
+                  className="flex flex-col items-center justify-evenly w-auto bg-gray-100"
+                >
+                  <Image
+                    src={item.image}
+                    alt={`Preview of ${item.name}`}
+                    layout="fixed"
+                    width={180}
+                    height={240}
+                  />
+                  <h3 className="capitalize">{item.name}</h3>
+                  <p className="text-xs font-mono overflow-ellipsis overflow-hidden ... p-4">
+                    {item.description}
+                  </p>
+                  <p>${item.price}</p>
+                  <button className="bg-yellow-800">Add to cart</button>
+                </div>
+              );
+            })
+          : "Loading..."}
+      </div>
     </div>
   );
 };

@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Up and running on Node v14.18.1
+
+``` nvm 14 ```
+``` npm run dev ```
+
 ## Getting Started
 
 First, run the development server:

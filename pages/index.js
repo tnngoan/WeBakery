@@ -1,11 +1,14 @@
 import Head from "next/head";
+import Image from "next/image";
+import poster from "/public/img/poster.png";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>WeBakery</title>
-        <meta name="WeBake" content="Best bake online" />
+        <meta name="WeBake" content="Best local bake" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://app.snipcart.com" />
         <link rel="preconnect" href="https://cdn.snipcart.com" />
@@ -15,9 +18,9 @@ export default function Home() {
         />
       </Head>
       <main>
-        <h1>hello bakers!</h1>
+        <Image src={poster} />
       </main>
-      <footer>This is footer </footer>
+      <Footer />
       <script
         async
         src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"

@@ -1,0 +1,40 @@
+[
+    {  
+        "id": "B-00",
+        "image": "/img/belgian-choco-blend.jpg",
+        "name": "Choco Blend",
+        "description": "We blend mocha sauce and Frappuccino® chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.",
+        "price": "2.00"
+      }, {  
+        "id": "B-01",
+        "image": "/img/berry-blend.jpg",
+        "name": "Mixed Berries Blend",
+        "description": "We blend mocha sauce and Frappuccino chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.",
+        "price": "2.00"
+      }, {  
+        "id": "B-02",
+        "image": "/img/blend-coffee.jpg",
+        "name": "Coconut Coffee Blend",
+        "description": "We blend mocha sauce and Frappuccino® chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.",
+        "price": "2.00"
+      }, {  
+        "id": "B-03",
+        "image": "/img/cappucino.jpg",
+        "name": "Cappucino",
+        "description": "We blend mocha sauce and Frappuccino® chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.",
+        "price": "2.00"
+      }, {  
+        "id": "B-04",
+        "image": "/img/caramel-cream-blend.jpg",
+        "name": "Caramel & Cream Blend",
+        "description": "We blend mocha sauce and Frappuccino® chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.",
+        "price": "2.00"
+      },
+      { 
+        "id": "B-05",
+        "image": "/img/strawberry-blend.jpg",
+        "name": "Strawberry Blend",
+        "description": "Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.",
+        "price": "4.85"
+      }      
+]
