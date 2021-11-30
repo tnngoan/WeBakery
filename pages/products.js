@@ -28,7 +28,7 @@ const Products = () => {
                     {item.description}
                   </p>
                   <p>${item.price}</p>
-                  <button className="bg-yellow-800">Add to cart</button>
+                  <button className="bg-yellow-800 text-white px-4 py-2 my-2 rounded-sm cursor-pointer">Add to cart</button>
                 </div>
               );
             })

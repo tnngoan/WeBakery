@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import poster from "/public/img/poster.png";
+import poster from "/public/img/banner.png";
 import Footer from "../components/Footer";
 
 export default function Home() {
