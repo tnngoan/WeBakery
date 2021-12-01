@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import poster from "/public/img/banner.png";
-import Footer from "../components/Footer";
+import poster from "/public/img/logo-freshbake.png";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
@@ -18,9 +18,8 @@ export default function Home() {
         />
       </Head>
       <main>
-        <Image src={poster} />
+        <Navbar />
       </main>
-      <Footer />
       <script
         async
         src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"

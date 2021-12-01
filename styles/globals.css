@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .nav-bg {
+  background-image: url(/img/banner.png);
+} */
+
 body {
-  background-image: url(/public/img/banner.png);
+  background-image: url(/img/webakeryonline.png);
+  background-repeat: no-repeat;
   background-color: rgb(253, 238, 204);
+  background-attachment: fixed;
+  background-size: auto;
+  background-position-y: 30%;
+  background-position-x: 40%;
 }
 
+main {
+  min-height: 1000px;
+}
