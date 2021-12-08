@@ -1,4 +1,7 @@
 import React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -15,15 +18,12 @@ function Footer() {
         <div>
           <h1 className="uppercase text-3xl tracking-widest px-4">WeBakery</h1>
           <div>
-            <a href="#">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram 3x"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter-square"></i>
-            </a>
+            <Link href="/">
+              <GitHubIcon className="text-grey-900 hover:text-grey-200" />
+            </Link>
+            <Link href="/">
+              <InstagramIcon className="text-grey-900 hover:text-grey-200" />
+            </Link>
           </div>
         </div>
 

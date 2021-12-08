@@ -9,7 +9,7 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 function Navbar() {
   return (
-    <nav className="nav-bg sticky top-0 z-50 flex justify-evenly items-center flex-shrink bg-gradient-to-b from-red-200 pb-32 mb-80 pt-2">
+    <nav className="nav-bg sticky top-0 z-50 flex justify-evenly items-center flex-shrink bg-gradient-to-b from-red-200 pt-2">
       <Link href="/">
         <Image src={logo} width={100} height={100}  className="cursor-pointer px-5" />
       </Link>

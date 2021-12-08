@@ -3,7 +3,7 @@ import products from "../products.json";
 
 const Products = () => {
   return (
-    <div className="">
+    <div className="pt-0 mt-0 bg-white">
       <div className="flex justify-center">
         <button className="px-4 mt-4 mx-4 w-32 bg-yellow-800 text-white">Food</button>
         <button className="px-4 mt-4 mx-4 w-32 bg-yellow-800 text-white">Beverages</button>
