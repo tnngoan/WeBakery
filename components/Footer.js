@@ -1,4 +1,7 @@
 import React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -15,19 +18,16 @@ function Footer() {
         <div>
           <h1 className="uppercase text-3xl tracking-widest px-4">WeBakery</h1>
           <div>
-            <a href="#">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram 3x"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter-square"></i>
-            </a>
+            <Link href="/" passHref>
+              <GitHubIcon className="text-grey-900 hover:text-grey-200" />
+            </Link>
+            <Link href="/" passHref>
+              <InstagramIcon className="text-grey-900 hover:text-grey-200" />
+            </Link>
           </div>
         </div>
 
-        <div class="right-container text-center">
+        <div className="right-container text-center">
           <hr className="bg-gray-900 my-2" />
           <ul>
             <li>shipping info</li>
@@ -38,7 +38,7 @@ function Footer() {
       </div>
       <p className="text-center">
         Copyright &copy; 2021 ||
-        <a class="author" href="https://github.com/tnngoan">
+        <a className="author" href="https://github.com/tnngoan">
           Tran Nhu Ngoan
         </a>
         . All rights reserved.
