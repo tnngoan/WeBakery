@@ -14,7 +14,7 @@ export default function Home() {
         <div className="bg-transparent min-h-screen"></div>
         <div className="bg-red-50 border-2 min-h-screen"></div>
         <div className="min-h-screen">
-          <Image src={poster2} width={1600} height={800} />
+          <Image alt="poster" src={poster2} width={1600} height={800} />
         </div>
       </main>
     </div>

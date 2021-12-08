@@ -10,8 +10,8 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 function Navbar() {
   return (
     <nav className="nav-bg sticky top-0 z-50 flex justify-evenly items-center flex-shrink bg-gradient-to-b from-red-200 pt-2">
-      <Link href="/">
-        <Image src={logo} width={100} height={100}  className="cursor-pointer px-5" />
+      <Link href="/" passHref>
+        <Image alt="logo" src={logo} width={100} height={100}  className="cursor-pointer px-5" />
       </Link>
       <div className="text-red-700 flex items-center rounded-md focus:border-red-100 flex-shrink">
         <input
@@ -22,7 +22,7 @@ function Navbar() {
       </div>
       <group className="cursor-pointer flex justify-around font-bold text-black">
         <IconButton>
-          <Link href="/products">
+          <Link href="/products" passHref>
             <AppsIcon
               className="text-red-400 hover:text-red-700"
               style={{ padding: 2, fontSize: 32 }}
@@ -31,7 +31,7 @@ function Navbar() {
           </Link>
         </IconButton>
         <IconButton>
-          <Link href="/cart">
+          <Link href="/cart" passHref>
             <ShoppingBasketIcon
               className="text-red-400 hover:text-red-700"
               style={{ padding: 2, fontSize: 32 }}
@@ -40,7 +40,7 @@ function Navbar() {
           </Link>
         </IconButton>
         <IconButton>
-          <Link href="/signin">
+          <Link href="/signin" passHref>
             <AccountCircleIcon
               className="text-red-400 hover:text-red-700"
               style={{ fontSize: 32, padding: 2 }}

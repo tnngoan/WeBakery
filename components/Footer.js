@@ -18,16 +18,16 @@ function Footer() {
         <div>
           <h1 className="uppercase text-3xl tracking-widest px-4">WeBakery</h1>
           <div>
-            <Link href="/">
+            <Link href="/" passHref>
               <GitHubIcon className="text-grey-900 hover:text-grey-200" />
             </Link>
-            <Link href="/">
+            <Link href="/" passHref>
               <InstagramIcon className="text-grey-900 hover:text-grey-200" />
             </Link>
           </div>
         </div>
 
-        <div class="right-container text-center">
+        <div className="right-container text-center">
           <hr className="bg-gray-900 my-2" />
           <ul>
             <li>shipping info</li>
@@ -38,7 +38,7 @@ function Footer() {
       </div>
       <p className="text-center">
         Copyright &copy; 2021 ||
-        <a class="author" href="https://github.com/tnngoan">
+        <a className="author" href="https://github.com/tnngoan">
           Tran Nhu Ngoan
         </a>
         . All rights reserved.
