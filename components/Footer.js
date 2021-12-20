@@ -15,14 +15,14 @@ function Footer() {
             <li>about</li>
           </ul>
         </div>
-        <div>
+        <div className='flex flex-col justify-between items-center'>
           <h1 className="uppercase text-3xl tracking-widest px-4">WeBakery</h1>
-          <div>
+          <div className='flex justify-around'>
             <Link href="/" passHref>
-              <GitHubIcon className="text-grey-900 hover:text-grey-200" />
+              <GitHubIcon className="text-grey-900 hover:text-grey-200 mx-1" />
             </Link>
             <Link href="/" passHref>
-              <InstagramIcon className="text-grey-900 hover:text-grey-200" />
+              <InstagramIcon className="text-grey-900 hover:text-grey-200 mx-1" />
             </Link>
           </div>
         </div>
